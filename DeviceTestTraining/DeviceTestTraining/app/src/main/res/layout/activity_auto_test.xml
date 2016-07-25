@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.panasonic.avc.mms.devicetesttraining.AutoTest">
+
+    <TableLayout
+        android:id="@+id/testTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Automatic test plan :"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/wifiTestTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1.Wi-Fi :"/>
+
+            <TextView
+                android:id="@+id/wifiTestCheckValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/bluetoothTestTittle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2.Bluetooth :"/>
+
+            <TextView
+                android:id="@+id/bluetoothTestCheckValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/wwanTestTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3.WWAN :"/>
+
+            <TextView
+                android:id="@+id/wwanTestCheckValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/gpsTestTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4.GPS :"/>
+
+            <TextView
+                android:id="@+id/gpsTestCheckValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/testTable"
+        android:divider="@drawable/shape"
+        android:showDividers="middle">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-------------------------------------------------"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/testResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:gravity="bottom"/>
+
+    <!--
+    by attribute of gravity="bottom",
+    it will scroll and always focus on latest line of text which is added
+         -->
+
+</RelativeLayout>

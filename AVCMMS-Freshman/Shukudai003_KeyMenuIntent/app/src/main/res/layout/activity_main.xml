@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="メニューから楽曲をセットしてください" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:id="@+id/table"
+        android:layout_below="@+id/mainText">
+
+        //---------------------
+        <TableRow>
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="アーティスト名："
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/artist_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        //---------------------
+
+        <TableRow>
+            <TextView
+                android:id="@+id/album_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="アルバム名："
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/album_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        //---------------------
+
+        <TableRow>
+            <TextView
+                android:id="@+id/track_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="トラック名："
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/track_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goButton"
+        android:layout_below="@+id/table"
+        android:text="再生画面へ"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="rear_camera">
+        <item>@string/dialog_check_rear_camera</item>
+    </array>
+    <array name="front_camera">
+        <item>@string/dialog_check_front_camera1</item>
+        <item>@string/dialog_check_front_camera2</item>
+    </array>
+    <array name="camera_light">
+        <item>@string/dialog_check_camera_light</item>
+    </array>
+</resources>

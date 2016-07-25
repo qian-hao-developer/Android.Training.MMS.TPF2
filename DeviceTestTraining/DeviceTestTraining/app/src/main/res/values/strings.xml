@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">DeviceTestTraining</string>
+
+    <string name="key_wifiCheckValue">wifiCheckValue</string>
+    <string name="key_bluetoothCheckValue">bluetoothCheckValue</string>
+    <string name="key_wwanCheckValue">wwanCheckValue</string>
+    <string name="key_gpsCheckValue">gpsCheckValue</string>
+
+    <string name="key_wifiTurnOnOff">wifiTurnOnOff</string>
+    <string name="key_wifiAccessPoint">wifiAccessPoint</string>
+    <string name="key_bluetoothTurnOnOff">bluetoothTurnOnOff</string>
+    <string name="key_bluetoothNearbyDevice">bluetoothNearbyDevice</string>
+    <string name="key_wwanTurnOnOff">wwanTurnOnOff</string>
+    <string name="key_wwanSIM">wwanSIM</string>
+    <string name="key_wwanNetwork">wwanNetwork</string>
+    <string name="key_gpsTurnOnOff">gpsTurnOnOff</string>
+    <string name="key_gpsDetect">gpsDetect</string>
+
+    <string name="key_multi_touch">MultiTouch</string>
+    <string name="key_single_touch">SingleTouch</string>
+    <string name="key_rear_camera">RearCamera</string>
+    <string name="key_front_camera">FrontCamera</string>
+    <string name="key_camera_light">CameraLight</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="passed"> : Passed</string>
+    <string name="failed"> : Failed</string>
+    <string name="not_executed"> : Not Executed</string>
+
+    <string name="run">Run</string>
+    <string name="ignore">Ignore</string>
+    <string name="cancelled">Cancelled</string>
+
+    <string name="result_icon">result_icon</string>
+
+    <string name="menu_1">1. Wi-Fi</string>
+    <string name="menu_1_1">1.1 Turn on and off</string>
+    <string name="menu_1_2">1.2 Detect access points</string>
+    <string name="menu_2">2. Bluetooth</string>
+    <string name="menu_2_1">2.1 Turn on and off</string>
+    <string name="menu_2_2">2.2 Detect nearby devices</string>
+    <string name="menu_3">3. WWAN</string>
+    <string name="menu_3_1">3.1 Turn on and off</string>
+    <string name="menu_3_2">3.2 Get SIM data</string>
+    <string name="menu_3_3">3.3 Network Connection</string>
+    <string name="menu_4">4. GPS</string>
+    <string name="menu_4_1">4.1 Turn on and off</string>
+    <string name="menu_4_2">4.2 Detect Satellite</string>
+    <string name="menu_5">5. Touchscreen(Multi-touch)</string>
+    <string name="menu_5_1">5.1 Detect touch events</string>
+    <string name="menu_6">6. Touchscreen(Single-touch)</string>
+    <string name="menu_6_1">6.1 Detect touch events</string>
+    <string name="menu_7">7. Front Camera</string>
+    <string name="menu_7_1">7.1 Display subject</string>
+    <string name="menu_7_2">7.2 Get light sensor value</string>
+    <string name="menu_8">8. Rear Camera</string>
+    <string name="menu_8_1">8.1 Display subject</string>
+    <string name="menu_9">9. Camera Light</string>
+    <string name="menu_9_1">9.1 Turn on camera light</string>
+
+    <string name="auto_test">AUTOMATIC TEST(4 TESTS)</string>
+    <string name="manual_test">MANUAL TEST(5 TESTS)</string>
+
+    <string name="error_no_check">Please select at least one item.</string>
+
+    <string name="title_rear_camera_test">RearCameraTest</string>
+    <string name="title_front_camera_test">FrontCameraTest</string>
+    <string name="dialog_camera">Please check the following items.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_check_rear_camera">The rear camera has started successfully.</string>
+    <string name="dialog_check_front_camera1">The front camera has started successfully.</string>
+    <string name="dialog_check_front_camera2">The values have been acquired from the light sensorsuccessfully.</string>
+    <string name="dialog_check_camera_light">The camera light has turned on successfully.</string>
+    <string name="explain_text_front_camera">Check the front camera and the light sensor.</string>
+    <string name="explain_text_rear_camera">Check the rear camera.</string>
+    <string name="explain_text_camera_light">Check the camera light.</string>
+    <string name="explain_back_key_dialog">Enter the result by pressing the back button.</string>
+    <string name="luminance">Luminance: </string>
+</resources>

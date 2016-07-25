@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/paintGroup" >
+        <item
+            android:id="@+id/eraserMenu"
+            android:title="消しゴム" />
+        <item
+            android:id="@+id/paintColorMenu"
+            android:title="線の色" />
+        <item
+            android:id="@+id/paintSizeMenu"
+            android:title="線の太さ" />
+    </group>
+
+    <group
+        android:id="@+id/eraserGroup" >
+        <item
+            android:id="@+id/paintMenu"
+            android:title="筆" />
+        <item
+            android:id="@+id/eraserSizeMenu"
+            android:title="消しゴムの太さ" />
+    </group>
+
+    <item
+        android:id="@+id/allClearMenu"
+        android:title="オールクリア" />
+
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\qian.hao\AndroidStudioProjects\Shukudai001_Layout\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e7d0cd8c4ca15b1037a5072b331a20e240db9ac6">
+        <dex dex="C:\Users\qian.hao\AndroidStudioProjects\Shukudai001_Layout\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_afc1f505f8ed25322d44a8d486ed8a1f16435ab5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\qian.hao\AndroidStudioProjects\Shukudai001_Layout\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="8664138c35e986b8866427bc9b65309006f4fd29">
+        <dex dex="C:\Users\qian.hao\AndroidStudioProjects\Shukudai001_Layout\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1452c4fd0d671bba6b8e3b47698f58862b148d28\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\qian.hao\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\qian.hao\AndroidStudioProjects\Shukudai001_Layout\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_dc25d58ee84501578af26f20c48c828de0da14b5\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="取得情報" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:id="@+id/table"
+        android:layout_below="@+id/mainText">
+
+        //---------------------
+        <TableRow>
+            <TextView
+                android:id="@+id/artist_name_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/artist"
+                android:gravity="center_vertical"
+                android:layout_span="2"/>
+        </TableRow>
+
+        //---------------------
+
+        <TableRow>
+            <TextView
+                android:id="@+id/album_name_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/album"
+                android:gravity="center_vertical"
+                android:layout_span="2"/>
+        </TableRow>
+
+        //---------------------
+
+        <TableRow>
+            <TextView
+                android:id="@+id/track_name_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/track"
+                android:gravity="center_vertical"
+                android:layout_span="2"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:id="@+id/togButton"
+        android:checked="false"
+        android:textOn="再生中"
+        android:textOff="停止中"/>
+
+</RelativeLayout>

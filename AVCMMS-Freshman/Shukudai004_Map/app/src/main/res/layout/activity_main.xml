@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.qianhao.avcmms.shukudai004_map.MainActivity">
+
+    <TextView
+        android:id="@+id/uponText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="検索する地名を入力してください" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:layout_below="@+id/uponText"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="検索地名"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/editView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pushBTN"
+        android:layout_below="@+id/tableLayout"
+        android:text="検索！"/>
+</RelativeLayout>

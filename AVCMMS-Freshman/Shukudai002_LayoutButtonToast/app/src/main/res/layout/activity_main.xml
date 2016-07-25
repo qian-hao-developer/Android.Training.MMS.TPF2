@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="文字列1"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/editView01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="文字列2"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/editView02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button01"
+                android:text="連携"
+                android:layout_span="2"/>
+        </TableRow>
+
+
+        //-------------------------------------------------------
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView03_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="文字列1"
+                android:gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView03_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView04_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="文字列1"
+                android:gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView04_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView05_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="連携した文字列"
+                android:gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textView05_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button02"
+                android:text="リセット"
+                android:layout_span="2"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,649 @@
+<ScrollView
+        android:id="@+id/scrollView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_test"
+                android:textSize="@dimen/text_size_medium"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thick"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_wifi"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/imageView_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_1"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_1_1"/>
+
+                    <TextView
+                            android:id="@+id/textView_wifi_turnOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_1_2"/>
+
+                    <TextView
+                            android:id="@+id/textView_wifi_detect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <CheckBox
+                    android:id="@+id/wifi_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:clickable="false"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_bluetooth"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/imageView_bluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_2"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_2_1"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_bluetooth_turnOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_2_2"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_bluetooth_detect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <CheckBox
+                    android:id="@+id/bluetooth_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:clickable="false"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_wwan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_wwan"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/imageView_wwan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_3"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_3_1"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_wwan_turnOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_3_2"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_wwan_SIM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_3_3"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_wwan_network"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <CheckBox
+                    android:id="@+id/wwan_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:clickable="false"
+                    />
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_gps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_gps"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/imageView_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_4"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_4_1"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_gps_turnOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_4_2"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_gps_detect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <CheckBox
+                    android:id="@+id/gps_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:clickable="false"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+
+        <Button
+                android:id="@+id/run_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="click_run_button"
+                android:text="@string/run"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manual_test"
+                android:textSize="@dimen/text_size_medium"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thick"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_multiTouch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_multiTouch"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/imageView_multi_touch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_5"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_5_1"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_multi_touch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_singleTouch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_singleTouch">
+
+            <ImageView
+                    android:id="@+id/imageView_single_touch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_6"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_6_1"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_single_touch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_frontCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_frontCamera">
+
+            <ImageView
+                    android:id="@+id/imageView_front_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_7"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_7_1"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_front_camera_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_7_2"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_front_light_sensor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_rearCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_rearCamera">
+
+            <ImageView
+                    android:id="@+id/imageView_rear_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_8"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_8_1"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_rear_camera_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+
+        <LinearLayout
+                android:id="@+id/main_cameraLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="select_cameraLight">
+
+            <ImageView
+                    android:id="@+id/imageView_camera_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/result_icon"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_9"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_9_1"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                            android:id="@+id/textView_camera_light_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_executed"
+                            android:textSize="@dimen/text_size_small"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_thin"
+                android:background="@color/black"/>
+    </LinearLayout>
+</ScrollView>
